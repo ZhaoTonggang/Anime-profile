@@ -6,8 +6,12 @@
 
 #### 目录结构
 heheda
-*css
-*font
+.../css
+.../../font-awesome.min.css
+.../.../font.css
+.../.../main.css
+.../.../noscript.css
+.../font
 
 #### 安装教程
 
