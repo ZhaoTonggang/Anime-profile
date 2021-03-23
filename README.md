@@ -1,43 +1,42 @@
-# 二次元个人引导主页
+# 二次元个人引导主页  
 
-#### 介绍
-这是一个漂亮的二次元个人主页，希望大家提出意见或指出错误。
-同时，也欢迎大佬参与开发。
-
-#### 目录结构
-heheda
-.../css
-.../../font-awesome.min.css
-.../.../font.css
-.../.../main.css
-.../.../noscript.css
-.../font
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+这是一个漂亮的二次元个人主页，希望大家提出意见或指出错误。同时，也欢迎大佬参与开发。
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 下载地址：  
+
+[Gitee](https://gitee.com/jhwhcm/Anime-profile)    
+
+
+
+## 示例页面：    
+ 
++ 二次元个人引导主页 ：[https://my.heheda.top](https://my.heheda.top)  
+
+
+
+  
+
+
+## 组件：  
+
+### 背景图：
+背景图标调用的是本人自建的动漫API接口：[https://cartoon.heheda.top/url.php](https://cartoon.heheda.top/url.php)，调用的人很多，所以不是很稳定，嫌弃的话可以自行更换。
+> 
+
+
+### 背景音乐 
+
+背景音乐是直接调用本地，可能占用服务器带宽。
+注意：带宽小的服务器，建议使用外链的方式，否则可能导致主页无法加载！
+> 您可以在‘index.html’文件的222行处修改。
+> 若您不需要背景音乐，您也可以直接注释掉，这样它就不加载了。
+您可以任意使用上面两种方法来改善您的项目，这是您的自由。
+
+
+## 常见问题
+1.页面不加载（一直转圈圈）
+> 这一般是背景图片没有加载或者超时。
+2.背景音乐无声
+> 请检查背景音乐是否加载。
