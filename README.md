@@ -6,7 +6,7 @@
 
 + 码云：[Gitee](https://gitee.com/jhwhcm/Anime-profile)    
 
-## 示例页面：    
+## 演示页面：    
  
 + 二次元个人引导主页 ：[https://my.heheda.top](https://my.heheda.top)  
 
