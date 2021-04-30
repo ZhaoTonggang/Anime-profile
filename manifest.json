@@ -16,7 +16,7 @@
         {
             "src": "./heheda/icon/128.png",
             "type": "image/png",
-            "sizes": "144x144"
+            "sizes": "128x128"
         },
         {
             "src": "./heheda/icon/144.png",
@@ -26,17 +26,17 @@
         {
             "src": "./heheda/icon/192.png",
             "type": "image/png",
-            "sizes": "144x144"
+            "sizes": "192x192"
         },
         {
             "src": "./heheda/icon/256.png",
             "type": "image/png",
-            "sizes": "144x144"
+            "sizes": "256x256"
         },
         {
             "src": "./heheda/icon/512.png",
             "type": "image/png",
-            "sizes": "144x144"
+            "sizes": "512x512"
         }
     ],
     "url": "https://my.heheda.top",
