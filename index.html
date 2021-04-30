@@ -66,13 +66,13 @@
 	<!-- 添加到主屏 -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<!--引入核心css-->
-	<link rel="stylesheet" href="heheda/css/main.css" type="text/css">
+	<link rel="stylesheet" href="./heheda/css/main.css" type="text/css">
 	<!--当动态内容被禁止时引入的css-->
 	<noscript>
-		<link rel="stylesheet" href="heheda/css/noscript.css" type="text/css">
+		<link rel="stylesheet" href="./heheda/css/noscript.css" type="text/css">
 	</noscript>
 	<!--webapp配置-->
-	<link rel='manifest' href='/manifest.json'>
+	<link rel='manifest' href='./manifest.json'>
 	<!--跨域内容预解析-->
 	<link rel="preconnect" href="https://pv.souhu.com/" crossorigin>
 	<link rel="preconnect" href="https://cartoon.heheda.top/" crossorigin>
@@ -96,25 +96,25 @@
 	<!--搜索引擎索引方式-->
 	<meta name="robots" content="all">
 	<!--logo-->
-	<link rel="shortcuticon" href="favicon.ico">
+	<link rel="shortcuticon" href="./favicon.ico">
 	<!---资源预加载配置(css)-->
-	<link rel="preload" as="style" href="heheda/css/font-awesome.min.css">
-	<link rel="preload" as="style" href="heheda/css/font.css">
+	<link rel="preload" as="style" href="./heheda/css/font-awesome.min.css">
+	<link rel="preload" as="style" href="./heheda/css/font.css">
 	<!---资源预加载配置(js)-->
-	<link rel="preload" as="script" href="heheda/js/jquery.min.js">
-	<link rel="preload" as="script" href="heheda/js/su.js">
+	<link rel="preload" as="script" href="./heheda/js/jquery.min.js">
+	<link rel="preload" as="script" href="./heheda/js/su.js">
 	<!---资源预加载配置(图片)-->
-	<link rel="preload" as="image" href="heheda/image/loader.gif" type="image/gif">
-	<link rel="preload" as="image" href="heheda/image/001.png" type="image/png">
-	<link rel="preload" as="image" href="heheda/image/002.png" type="image/png">
-	<link rel="preload" as="image" href="heheda/image/003.png" type="image/png">
-	<link rel="preload" as="image" href="heheda/image/004.png" type="image/png">
-	<link rel="preload" as="image" href="heheda/image/005.png" type="image/png">
-	<link rel="preload" as="image" href="heheda/image/006.png" type="image/png">
-	<link rel="preload" as="image" href="heheda/image/007.png" type="image/png">
-	<link rel="preload" as="image" href="heheda/image/008.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/loader.gif" type="image/gif">
+	<link rel="preload" as="image" href="./heheda/image/001.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/002.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/003.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/004.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/005.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/006.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/007.png" type="image/png">
+	<link rel="preload" as="image" href="./heheda/image/008.png" type="image/png">
 	<!---资源预加载配置(字体)-->
-	<link rel="preload" as="font" href="heheda/font/woff2/7.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="./heheda/font/woff2/7.woff2" type="font/woff2" crossorigin>
 
 </head>
 <!--body模块 并设置禁用右键属性-->
@@ -206,14 +206,14 @@
 		}
 	</script>
 	<!--落叶效果-->
-	<script src="heheda/js/jquery.min.js"></script>
-	<script src="heheda/js/su.js"></script>
+	<script src="./heheda/js/jquery.min.js"></script>
+	<script src="./heheda/js/su.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$('body').wpSuperSnow({
-				flakes: ['heheda/image/007.png', 'heheda/image/006.png', 'heheda/image/004.png',
-					'heheda/image/005.png', 'heheda/image/001.png', 'heheda/image/003.png',
-					'heheda/image/002.png', 'heheda/image/008.png'
+				flakes: ['./heheda/image/007.png', './heheda/image/006.png', './heheda/image/004.png',
+					'./heheda/image/005.png', './heheda/image/001.png', './heheda/image/003.png',
+					'./heheda/image/002.png', './heheda/image/008.png'
 				],
 				totalFlakes: '100',
 				zIndex: '999999999',
@@ -226,11 +226,11 @@
 	<!-- 背景音乐代码 -->
 	<audio autoplay="autopaly" loop="loop" src="https://jhwhcm.gitee.io/background-music/0.mp3" type="audio/mp3">
 	</audio>
+	<script type="module">
+		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+		const el = document.createElement('pwa-update');
+		document.body.appendChild(el);
+	</script>
 </body>
-<script type="module">
-	import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-	const el = document.createElement('pwa-update');
-	document.body.appendChild(el);
-</script>
 
 </html>

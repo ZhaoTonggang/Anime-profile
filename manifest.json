@@ -4,14 +4,14 @@
     "name": "「赵彤刚」的小屋！",
     "short_name": "「赵彤刚」的小屋！",
     "scope": "/",
-    "display": "fullscreen",
+    "display": "standalone",
     "start_url": "https://my.heheda.top/",
-    "background_color": "#009900",
+    "background_color": "#00ffff",
     "theme_color": "#CCFFFF",
     "description": "「赵彤刚」的小屋",
     "orientation": "any",
     "related_applications": [],
-    "prefer_related_applications": false,
+    "prefer_related_applications": "false",
     "icons": [
         {
             "src": "./heheda/icon/128.png",
@@ -39,5 +39,7 @@
             "sizes": "144x144"
         }
     ],
-    "url": "https://my.heheda.top"
+    "url": "https://my.heheda.top",
+    "manifestUrl": "./manifest.json",
+    "screenshots": []
 }
