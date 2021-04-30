@@ -1,0 +1,43 @@
+{
+    "dir": "ltr",
+    "lang": "zh",
+    "name": "「赵彤刚」的小屋！",
+    "short_name": "「赵彤刚」的小屋！",
+    "scope": "/",
+    "display": "fullscreen",
+    "start_url": "https://my.heheda.top/",
+    "background_color": "#009900",
+    "theme_color": "#CCFFFF",
+    "description": "「赵彤刚」的小屋",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "./heheda/icon/128x128.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./heheda/icon/144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./heheda/icon/192x192.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./heheda/icon/256x256.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./heheda/icon/512x512.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "url": "https://my.heheda.top"
+}

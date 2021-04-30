@@ -71,6 +71,8 @@
 	<noscript>
 		<link rel="stylesheet" href="heheda/css/noscript.css" type="text/css">
 	</noscript>
+	<!--webapp配置-->
+	<link rel='manifest' href='/manifest.json'>
 	<!--跨域内容预解析-->
 	<link rel="preconnect" href="https://pv.souhu.com/" crossorigin>
 	<link rel="preconnect" href="https://cartoon.heheda.top/" crossorigin>
@@ -143,7 +145,8 @@
 				<br><br>
 				<!--中部导航-->
 				<ul class="icons">
-					<li><a href="https://blog.heheda.top/" class="fa fa-globe" rel="noopener" target="_blank>">blog</a>博客
+					<li><a href="https://blog.heheda.top/" class="fa fa-globe" rel="noopener"
+							target="_blank>">blog</a>博客
 					</li>
 					<li><a href="https://my.heheda.top/movie/" class="fa fa-film" rel="noopener"
 							target="_blank>">movie</a>电影</li>
@@ -151,8 +154,10 @@
 							target="_blank>">music</a>音乐</li>
 					<li><a href="picture" class="fa fa-picture-o" rel="noopener" target="_blank>">picture</a>图片</li>
 					<li><a href="book" class="fa fa-book" rel="noopener" target="_blank>">book</a>小说</li>
-					<li><a href="https://tool.heheda.top/" class="fa fa-briefcase" rel="noopener" target="_blank>">tool</a>工具</li>
-					<li><a href="https://api.heheda.top/" class="fa fa-cogs" rel="noopener" target="_blank>">api</a>API</li>
+					<li><a href="https://tool.heheda.top/" class="fa fa-briefcase" rel="noopener"
+							target="_blank>">tool</a>工具</li>
+					<li><a href="https://api.heheda.top/" class="fa fa-cogs" rel="noopener" target="_blank>">api</a>API
+					</li>
 					<li><a href="https://photo.heheda.top/" class="fa fa-camera" rel="noopener"
 							target="_blank>">photo</a>相册</li>
 				</ul>
@@ -222,5 +227,10 @@
 	<audio autoplay="autopaly" loop="loop" src="https://jhwhcm.gitee.io/background-music/0.mp3" type="audio/mp3">
 	</audio>
 </body>
+<script type="module">
+	import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+	const el = document.createElement('pwa-update');
+	document.body.appendChild(el);
+</script>
 
 </html>
