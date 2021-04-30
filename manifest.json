@@ -14,27 +14,27 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "./heheda/icon/128x128.png",
+            "src": "./heheda/icon/128.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "./heheda/icon/144x144.png",
+            "src": "./heheda/icon/144.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "./heheda/icon/192x192.png",
+            "src": "./heheda/icon/192.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "./heheda/icon/256x256.png",
+            "src": "./heheda/icon/256.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "./heheda/icon/512x512.png",
+            "src": "./heheda/icon/512.png",
             "type": "image/png",
             "sizes": "144x144"
         }
