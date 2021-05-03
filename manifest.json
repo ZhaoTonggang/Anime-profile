@@ -3,9 +3,9 @@
     "lang": "zh",
     "name": "「赵彤刚」的小屋！",
     "short_name": "「赵彤刚」的小屋！",
-    "scope": "/",
+    "scope": "./",
     "display": "standalone",
-    "start_url": "/",
+    "start_url": "./",
     "background_color": "#00ffff",
     "theme_color": "#CCFFFF",
     "description": "「赵彤刚」的小屋",
@@ -39,7 +39,7 @@
             "sizes": "512x512"
         }
     ],
-    "url": "/",
+    "url": "./",
     "manifestUrl": "./manifest.json",
     "screenshots": []
 }
