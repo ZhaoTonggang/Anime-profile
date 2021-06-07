@@ -145,14 +145,14 @@
 				<br><br>
 				<!--中部导航-->
 				<ul class="icons">
-					<li><a href="https://blog.heheda.top/" class="fa fa-globe" rel="noopener"
-							target="_blank">blog</a>博客
+					<li><a href="https://blog.heheda.top/" class="fa fa-globe" rel="noopener" target="_blank">blog</a>博客
 					</li>
 					<li><a href="https://movie.heheda.top/" class="fa fa-film" rel="noopener"
 							target="_blank">movie</a>电影</li>
 					<li><a href="https://music.heheda.top/" class="fa fa-music" rel="noopener"
 							target="_blank">music</a>音乐</li>
-					<li><a href="https://picture.heheda.top/" class="fa fa-picture-o" rel="noopener" target="_blank">picture</a>图片</li>
+					<li><a href="https://picture.heheda.top/" class="fa fa-picture-o" rel="noopener"
+							target="_blank">picture</a>图片</li>
 					<li><a href="book" class="fa fa-book" rel="noopener" target="_blank">book</a>小说</li>
 					<li><a href="https://tool.heheda.top/" class="fa fa-briefcase" rel="noopener"
 							target="_blank">tool</a>工具</li>
@@ -178,17 +178,20 @@
 				<li>您的IP：
 					<script type="text/javascript">
 						document.write(returnCitySN["cip"])
+
 					</script>
 				</li>
 				<li>您的节点：
 					<script type="text/javascript">
 						document.write(returnCitySN["cid"])
+
 					</script>
 				</li>
 				<!--位置信息模块-->
 				<li>您的位置：
 					<script type="text/javascript">
 						document.write(returnCitySN["cname"])
+
 					</script>
 				</li>
 			</ul>
@@ -204,6 +207,7 @@
 			});
 			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 		}
+
 	</script>
 	<!--落叶效果-->
 	<script src="./heheda/js/jquery.min.js"></script>
@@ -222,10 +226,12 @@
 				useFlakeTrans: true
 			});
 		});
+
 	</script>
 	<!-- 背景音乐代码 -->
-	<audio autoplay="autopaly" loop="loop" src="https://jhwhcm.gitee.io/background-music/0.mp3" type="audio/mp3">
-	</audio>
+	<div id="music" key="60bd6d679ce38" api="https://musical.heheda.top"></div>
+	<script id="xplayer" src="https://musical.heheda.top/api/PlayerJs/id/60bd6d679ce38"></script>
+	<!--PWA渐进式应用配置-->
 	<script type="module">
 		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 		const el = document.createElement('pwa-update');
