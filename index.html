@@ -73,6 +73,8 @@
 	</noscript>
 	<!--PWA配置-->
 	<link rel='manifest' href='./manifest.json'>
+	<!--引入核心js-->
+	<script src="./heheda/js/jquery-3.6.0.min.js"></script>
 	<!--跨域内容预解析-->
 	<link rel="preconnect" href="https://pv.souhu.com/" crossorigin>
 	<link rel="preconnect" href="https://cartoon.heheda.top/" crossorigin>
@@ -101,7 +103,7 @@
 	<link rel="preload" as="style" href="./heheda/css/font-awesome.min.css">
 	<link rel="preload" as="style" href="./heheda/css/font.css">
 	<!---资源预加载配置(js)-->
-	<link rel="preload" as="script" href="./heheda/js/jquery.min.js">
+	<link rel="preload" as="script" href="./heheda/js/jquery-3.6.0.min.js">
 	<link rel="preload" as="script" href="./heheda/js/su.js">
 	<!---资源预加载配置(图片)-->
 	<link rel="preload" as="image" href="./heheda/image/loader.gif" type="image/gif">
@@ -115,7 +117,6 @@
 	<link rel="preload" as="image" href="./heheda/image/008.png" type="image/png">
 	<!---资源预加载配置(字体)-->
 	<link rel="preload" as="font" href="./heheda/font/woff2/7.woff2" type="font/woff2" crossorigin>
-
 </head>
 <!--body模块 并设置禁用右键属性-->
 
@@ -210,7 +211,6 @@
 
 	</script>
 	<!--落叶效果-->
-	<script src="./heheda/js/jquery.min.js"></script>
 	<script src="./heheda/js/su.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
@@ -228,7 +228,9 @@
 		});
 
 	</script>
-	<!-- 背景音乐代码 -->
+	<!--背景音乐模块-->
+	<!--温馨提示：请自行前往“https://musical.heheda.top/”免费进行使用授权以及相关功能的配置！-->
+	<!--播放器代码-->
 	<div id="music" key="60bd6d679ce38" api="https://musical.heheda.top"></div>
 	<script id="xplayer" src="https://musical.heheda.top/api/PlayerJs/id/60bd6d679ce38"></script>
 	<!--PWA渐进式应用配置-->
