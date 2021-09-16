@@ -134,7 +134,8 @@
 				<a href="https://blog.heheda.top/" rel="noopener" target="_blank">
 					<h1>赵彤刚</h1>
 				</a>
-				<p>欢迎来到我的小屋！</p>
+				<!--一言-->
+				<p id="hitokoto" style="color:#000;text-shadow:1px 1px 1px #ffffff;font-weight: bold;">:D 获取中...</p>
 			</header>
 			<!--footer模块-->
 			<footer>
@@ -233,12 +234,28 @@
 	<!--背景音乐模块-->
 	<!--温馨提示：请自行前往“https://musical.heheda.top/”免费进行使用授权以及相关功能的配置！-->
 	<!--播放器代码-->
-	<script id="music" src="https://music.xingyaox.com/player.js" key="ceefc38a6a1642db872e5dc80b3a0735"></script>
+	<div id="music" key="60bd6d679ce38" api="https://musical.heheda.top"></div>
+	<script id="xplayer" src="https://musical.heheda.top/api/PlayerJs/id/60bd6d679ce38"></script>
 	<!--PWA渐进式应用配置-->
 	<script type="module">
 		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 		const el = document.createElement('pwa-update');
 		document.body.appendChild(el);
+	</script>
+	<!--一言API-->
+	<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+	<!--网站标题自动判断-->
+	<script>
+		var title = document.title;
+		// window 失去焦点 
+		window.onblur = function () {
+			document.title = '(つ ェ ⊂)我藏好了哦~';
+		};
+		// window 获得焦点 
+		window.onfocus = function () {
+			document.title = '(*゜ロ゜)ノ被发现了~';
+			setTimeout("document.title=title", 3000);
+		}
 	</script>
 </body>
 
