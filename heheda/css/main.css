@@ -226,7 +226,7 @@ body:after {
 	background-image: -ms-linear-gradient(60deg, rgba(253, 158, 240, 0.5), rgb(129, 208, 253)), url("../image/loader.gif");
 	background-image: linear-gradient(60deg, rgba(253, 158, 240, 0.5), rgb(129, 208, 253)), url("../image/loader.gif");
 	background-repeat: no-repeat, no-repeat;
-	background-size: cover, 10%;
+	background-size: cover, 20%;
 	background-position: center center, center center;
 	-moz-transition: opacity 1.75s ease-out;
 	-webkit-transition: opacity 1.75s ease-out;
@@ -1013,4 +1013,21 @@ body.is-loading #main {
 
 body.is-ie #wrapper {
 	height: 100%;
+}
+
+/*分享按钮*/
+.cd-top {
+	display: block;
+	border-radius: 55px 10px 55px 55px;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	cursor: pointer;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: url(../image/fenxiang.svg) rgb(0, 140, 255) no-repeat center/cover;
 }
