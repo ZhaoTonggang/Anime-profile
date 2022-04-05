@@ -813,7 +813,7 @@ button:disabled,
 	position: relative;
 	max-width: 100%;
 	min-width: 27em;
-	padding: 0 20px;
+	padding: 0 10px;
 	border-radius: 40px;
 	background-color: rgba(111, 255, 107, 0.5);
 	cursor: default;
@@ -859,11 +859,11 @@ button:disabled,
 	display: block;
 	position: absolute;
 	top: 50%;
-	left: -1.2em;
-	width: calc(100% + 2.2em);
+	left: -0.5em;
+	width: calc(100% + 0.9em);
 	height: 5px;
 	z-index: -1;
-	background: linear-gradient(to right, red, orange, indigo, yellow, green, blue, purple, black) no-repeat center/500%;
+	background: linear-gradient(to right, white, red, orange, indigo, yellow, green, blue, purple, black) no-repeat center/500%;
 	animation: rlactivity 10s infinite;
 }
 
@@ -873,6 +873,11 @@ button:disabled,
 		min-width: 0;
 		width: 100%;
 		padding: 0em 1em 1em 1em;
+	}
+	
+	#main .avatar:before{
+		left: -1em;
+		width: calc(100% + 1.9em);
 	}
 }
 
@@ -909,7 +914,7 @@ ul.copylaft,
 }
 
 ul.copylaft li {
-	margin: 20px 0;
+	margin: 10px 0;
 	padding: 0 0 0 0.9em;
 	display: inline-block;
 	border-left: double 5px rgb(0, 0, 0);
@@ -998,7 +1003,7 @@ body.is-ie #wrapper {
 	color: #000000;
 	text-shadow: 1px 1px 1px #ffffff;
 	font-weight: bold;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 /* 左右晃动效果 */
