@@ -70,6 +70,8 @@
 		<link rel="stylesheet" href="./heheda/css/main.css" type="text/css" />
 		<!-- 引入FontAwesome图标库 -->
 		<link rel="stylesheet" href="./heheda/lib/font-awesome-4.7.0/css/font-awesome.min.css" />
+		<!-- 音乐播放器 -->
+		<link rel="stylesheet" href="./heheda/lib/zplayer/css/zplayer.css" />
 		<!--PWA配置-->
 		<link rel='manifest' href='./manifest.json' />
 		<!--跨域内容预解析-->
@@ -195,6 +197,7 @@
 				</ul>
 			</footer>
 			<div class="cd-top" onclick="call()" title="喜欢，就分享一下吧">分享</div>
+			<div id="player3"></div>
 		</div>
 		<!--引入核心js-->
 		<script src="./heheda/js/jquery-3.6.0.min.js"></script>
@@ -206,10 +209,9 @@
 		<script src="./heheda/js/NativeShare.js"></script>
 		<!--页面逻辑-->
 		<script src="./heheda/js/index.js"></script>
-		<!--背景音乐播放器代码(需要授权使用)-->
-		<!--温馨提示：请自行前往“https://musical.heheda.top/”免费进行使用授权以及相关功能的配置！-->
-		<div id="music" key="60bd6d679ce38" api="https://musical.heheda.top"></div>
-		<script async="async" id="xplayer" src="https://musical.heheda.top/api/PlayerJs/id/60bd6d679ce38"></script>
+		<!-- 音乐播放器 -->
+		<script src="./heheda/lib/zplayer/js/zplayer.js" defer></script>
+		<script src="https://www.blog.heheda.top/zplayers.js" defer></script>
 		<!--PWA渐进式应用配置-->
 		<script async="async" type="module">
 			import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
