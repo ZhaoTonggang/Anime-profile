@@ -847,11 +847,12 @@ button:disabled,
 	box-shadow: 0 0 5px 20px #6fff6b;
 	width: 100px;
 	height: 100px;
-	transition: all 1s;
+	transition: all 1s linear;
 }
 
 #main .avatar img:hover {
 	transform: rotate(360deg);
+	transition: all 1s linear;
 }
 
 #main .avatar:before {
@@ -995,6 +996,7 @@ body.is-ie #wrapper {
 	cursor: pointer;
 	text-indent: 100%;
 	white-space: nowrap;
+	z-index: 99;
 	background: url(../image/fenxiang.svg) rgb(0, 140, 255) no-repeat center/cover;
 }
 
