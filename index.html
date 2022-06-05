@@ -77,11 +77,9 @@
 		<!--跨域内容预解析-->
 		<link rel="preconnect" href="https://cartoon.heheda.top/" crossorigin />
 		<link rel="preconnect" href="https://tva1.sinaimg.cn/" crossorigin />
-		<link rel="preconnect" href="https://blog.heheda.top/" crossorigin />
 		<link rel="preconnect" href="https://q2.qlogo.cn/" crossorigin />
 		<link rel="dns-prefetch" href="https://cartoon.heheda.top/" />
 		<link rel="dns-prefetch" href="https://tva1.sinaimg.cn/" />
-		<link rel="dns-prefetch" href="https://blog.heheda.top/" />
 		<link rel="dns-prefetch" href="https://q2.qlogo.cn/" />
 		<!--SEO优化-->
 		<!--标题-->
@@ -97,22 +95,6 @@
 		<meta name="robots" content="all">
 		<!--logo-->
 		<link rel="shortcuticon" href="./favicon.ico" />
-		<!---资源预加载配置(css)-->
-		<link rel="preload" as="style" href="./heheda/css/main.css" />
-		<link rel="preload" as="style" href="./heheda/lib/font-awesome-4.7.0/css/font-awesome.min.css" />
-		<!---资源预加载配置(js)-->
-		<link rel="preload" as="script" href="./heheda/js/jquery-3.6.0.min.js" />
-		<link rel="preload" as="script" href="./heheda/js/su.js" />
-		<!---资源预加载配置(图片)-->
-		<link rel="preload" as="image" href="./heheda/image/loader.gif" type="image/gif" />
-		<link rel="preload" as="image" href="./heheda/image/001.png" type="image/png" />
-		<link rel="preload" as="image" href="./heheda/image/002.png" type="image/png" />
-		<link rel="preload" as="image" href="./heheda/image/003.png" type="image/png" />
-		<link rel="preload" as="image" href="./heheda/image/004.png" type="image/png" />
-		<link rel="preload" as="image" href="./heheda/image/005.png" type="image/png" />
-		<link rel="preload" as="image" href="./heheda/image/006.png" type="image/png" />
-		<link rel="preload" as="image" href="./heheda/image/007.png" type="image/png" />
-		<link rel="preload" as="image" href="./heheda/image/008.png" type="image/png" />
 	</head>
 	<!--body模块-->
 
@@ -183,7 +165,6 @@
 			<!-- Footer -->
 			<footer id="footer">
 				<ul class="copyright">
-					<!--IP信息模块-->
 					<li>
 						<!--萌icp备案-->
 						<a href="https://icp.gov.moe/?keyword=20211315" target="_blank"
@@ -197,7 +178,7 @@
 				</ul>
 			</footer>
 		</div>
-		<div class="cd-top" onclick="call()" title="喜欢，就分享一下吧">分享</div>
+		<div id="cd-top" onclick="call()" title="喜欢，就分享一下吧">分享</div>
 		<div id="player3"></div>
 		<!--引入核心js-->
 		<script src="./heheda/js/jquery-3.6.0.min.js"></script>
@@ -205,8 +186,6 @@
 		<script src="./heheda/js/su.js"></script>
 		<!--一言API-->
 		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-		<!--分享按钮依赖-->
-		<script src="./heheda/js/NativeShare.js"></script>
 		<!--页面逻辑-->
 		<script src="./heheda/js/index.js"></script>
 		<!-- 音乐播放器 -->

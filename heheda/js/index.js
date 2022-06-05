@@ -1,3 +1,9 @@
+// 获取必要参数
+let title = document.title;
+if (!navigator.share) {
+	document.getElementById("cd-top").style.display = "none";
+}
+
 //页面载入设置
 if ('addEventListener' in window) {
 	window.addEventListener('load', function() {
@@ -5,6 +11,7 @@ if ('addEventListener' in window) {
 	});
 	document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 }
+
 //网页飘落效果
 jQuery(document).ready(function($) {
 	$('body').wpSuperSnow({
@@ -19,12 +26,35 @@ jQuery(document).ready(function($) {
 		useFlakeTrans: false
 	});
 });
-//网站标题自动判断
-var title = document.title;
 
+//分享设置
+function call() {
+	navigator.share({
+		title: title,
+		url: window.location.href,
+		text: '赵彤刚的工具箱'
+	});
+}
+
+// 通知
+if (window.Notification.permission == "granted") {
+	sendNotification();
+} else if (window.Notification.permission != "denied") {
+	window.Notification.requestPermission(function(permission) {
+		sendNotification();
+	});
+}
+
+function sendNotification() {
+	new Notification("赵彤刚的小屋", {
+		body: '久违了我的朋友，欢迎您的访问！',
+		icon: './heheda/icon/128.png'
+	})
+}
+
+// 标题判断
 function istitle() {
-	var isHidden = document.hidden;
-	if (isHidden) {
+	if (document.hidden) {
 		//当窗口不可见
 		document.title = '(つ ェ ⊂)我藏好了哦~';
 	} else {
@@ -34,36 +64,11 @@ function istitle() {
 	}
 };
 document.addEventListener('visibilitychange', istitle);
-//分享设置
-var nativeShare = new NativeShare()
-var shareData = {
-	title: '赵彤刚的小屋',
-	desc: '据说是一个神奇且值得探索的地方！',
-	// 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
-	link: 'https://my.heheda.top/',
-	icon: './heheda/icon/128.png',
-	// 不要过于依赖以下两个回调，很多浏览器是不支持的
-	// success: function() {
-	//     alert('success')
-	// },
-	// fail: function() {
-	//     alert('fail')
-	// }
-}
-nativeShare.setShareData(shareData)
 
-function call(command) {
-	try {
-		nativeShare.call(command)
-	} catch (err) {
-		// 如果不支持，你可以在这里做降级处理
-		// alert(err.message)
-		alert("分享失败，请手动分享！")
-	}
-}
-
-function setTitle(title) {
-	nativeShare.setShareData({
-		title: title,
-	})
-}
+// 版权
+console.log("%c赵彤刚%c版权所有", "font-size:15px;padding:3px;color:white;background:#023047",
+	"font-size:15px;padding:3px;color:white;background:#219EBC");
+console.log("%c本人寻求一份前端开发的工作，有意者请联系%c\n%cTEL:15327682114%c\n%c微信:16699352957",
+	"font-size:15px;padding:3px;color:white;background:#023047", "",
+	"font-size:15px;padding:3px;color:white;background:#219EBC", "",
+	"font-size:15px;padding:3px;color:white;background:#219EBC");
