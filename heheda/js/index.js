@@ -37,12 +37,14 @@ function call() {
 }
 
 // 通知
-if (window.Notification.permission == "granted") {
-	sendNotification();
-} else if (window.Notification.permission != "denied") {
-	window.Notification.requestPermission(function(permission) {
+if ("Notification" in window) {
+	if (window.Notification.permission == "granted") {
 		sendNotification();
-	});
+	} else if (window.Notification.permission != "denied") {
+		window.Notification.requestPermission(function(permission) {
+			sendNotification();
+		});
+	}
 }
 
 function sendNotification() {
