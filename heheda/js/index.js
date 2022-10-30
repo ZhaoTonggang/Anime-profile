@@ -5,15 +5,18 @@ if (!navigator.share) {
 }
 
 //页面载入设置
-if ('addEventListener' in window) {
-	window.addEventListener('load', function() {
-		document.body.className = document.body.className.replace(/\bis-loading\b/, '');
-	});
-	document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+if (navigator.userAgent.match(/(MSIE|rv:11\.0)/)) {
+	document.body.classList.add("is-ie");
+}
+document.onreadystatechange = function() {
+	if (document.readyState === "complete") {
+		eventHandler();
+		document.body.classList.remove("is-loading");
+	}
 }
 
 //网页飘落效果
-jQuery(document).ready(function($) {
+function eventHandler() {
 	$('body').wpSuperSnow({
 		flakes: ['./heheda/image/007.png', './heheda/image/006.png', './heheda/image/004.png',
 			'./heheda/image/005.png', './heheda/image/001.png', './heheda/image/003.png',
@@ -25,7 +28,7 @@ jQuery(document).ready(function($) {
 		maxDuration: '50',
 		useFlakeTrans: false
 	});
-});
+}
 
 //分享设置
 function call() {

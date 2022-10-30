@@ -1,7 +1,8 @@
-(function (a) {
-	a.fn.wpSuperSnow = function (g) {
-		var q, h, r, b, s, n, f, t, m, l = a("head"),
-			o = a("body"),
+(function(a) {
+	a.fn.wpSuperSnow = function(g) {
+		let q, h, r, b, s, n, f, t, m, l = document.head || document.getElementsByTagName("head")[0] || document
+			.documentElement,
+			o = document.body,
 			p, u, d, k = {
 				flakes: [],
 				totalFlakes: 50,
@@ -12,25 +13,26 @@
 			},
 			c = ["wpSuperSnowFlake_l", "wpSuperSnowFlake_r"],
 			j = ["wpSuperSnow_l", "wpSuperSnow_r"];
-		g = a.extend({}, k, g);
+		g = Object.assign({}, k, g);
 		if (!g.flakes.length) {
 			return this
 		}
 		if (a.wpSuperSnowCSS) {
-			l.append('<style type="text/css">' + a.wpSuperSnowCSS + "</style>"), a.wpSuperSnowCSS = ""
+			let aped = '<style type="text/css">' + a.wpSuperSnowCSS + '</style>';
+			l.insertAdjacentHTML('beforeend', aped);
+			a.wpSuperSnowCSS = ""
 		}
-		var e = function (v, i) {
+		var e = function(v, i) {
 			v = (typeof v === "number") ? v : 0;
 			i = (typeof i === "number") ? i : Number.MAX_VALUE;
 			return Math.floor(Math.random() * (i - v + 1)) + v
 		};
-		return this.each(function () {
+		return this.each(function() {
 			p = a(this), u = "fixed";
-			if (a.inArray(p[0].nodeName.toLowerCase(), ["html", "body"]) === -1) {
-				p.css({
-					position: "relative",
-					overflow: "hidden"
-				}), u = "absolute"
+			if (["html", "body"].indexOf(p[0].nodeName.toLowerCase()) === -1) {
+				p.style.position = 'relative';
+				p.style.overflow = 'hidden';
+				u = "absolute"
 			}
 			d = [0, 0, 1, 1, 2, 2, 3, 3, 4, 5, 6, 7, 8, 9, 10];
 			for (p = a(this), q = 1; q <= Number(g.totalFlakes); q++) {
@@ -66,7 +68,8 @@
 					"-moz-animation-delay": s + "s",
 					"-ms-animation": f + " " + b + "s infinite",
 					"-ms-animation-delay": s + "s"
-				}), a("img", m).css({
+				});
+				a("img", m).css({
 					width: "100%",
 					height: "auto",
 					border: 0,
@@ -108,4 +111,4 @@
 		"@-ms-keyframes wpSuperSnowFlake_l {0% {opacity:0;} 25% {opacity:1;} 100% {opacity:0; -ms-transform:translate3D(500px,1500px,0) rotateY(720deg) rotate(250deg);}}";
 	a.wpSuperSnowCSS +=
 		"@-ms-keyframes wpSuperSnowFlake_r {0% {opacity:0;} 25% {opacity:1;} 100% {opacity:0; -ms-transform:translate3D(-500px,1500px,0) rotateY(-720deg) rotate(-500deg);}}"
-})(jQuery);
+})($);
