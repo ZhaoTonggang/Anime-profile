@@ -180,10 +180,10 @@ html {
 
 body {
 	height: 100%;
-	background: -moz-linear-gradient(60deg, rgba(253, 158, 240, 0.8), rgba(129, 208, 253, 0.8)) no-repeat fixed center/cover, url(https://cartoon.heheda.top/url.php) no-repeat fixed center/130%;
-	background: -webkit-linear-gradient(60deg, rgba(253, 158, 240, 0.8), rgba(129, 208, 253, 0.8)) no-repeat fixed center/cover, url(https://cartoon.heheda.top/url.php) no-repeat fixed center/130%;
-	background: -ms-linear-gradient(60deg, rgba(253, 158, 240, 0.8), rgba(129, 208, 253, 0.8)) no-repeat fixed center/cover, url(https://cartoon.heheda.top/url.php) no-repeat fixed center/130%;
-	background: linear-gradient(60deg, rgba(253, 158, 240, 0.8), rgba(129, 208, 253, 0.8)) no-repeat fixed center/cover, url(https://cartoon.heheda.top/url.php) no-repeat fixed center/130%;
+	background: -moz-linear-gradient(60deg, rgba(253, 158, 240, 0.8), rgba(129, 208, 253, 0.8)) no-repeat fixed center/cover, url(../image/ztg.png) no-repeat fixed center/110%;
+	background: -webkit-linear-gradient(60deg, rgba(253, 158, 240, 0.8), rgba(129, 208, 253, 0.8)) no-repeat fixed center/cover, url(../image/ztg.png) no-repeat fixed center/110%;
+	background: -ms-linear-gradient(60deg, rgba(253, 158, 240, 0.8), rgba(129, 208, 253, 0.8)) no-repeat fixed center/cover, url(../image/ztg.png) no-repeat fixed center/110%;
+	background: linear-gradient(60deg, rgba(253, 158, 240, 0.8), rgba(129, 208, 253, 0.8)) no-repeat fixed center/cover, url(../image/ztg.png) no-repeat fixed center/110%;
 	animation: rlactivity 10s infinite;
 }
 
