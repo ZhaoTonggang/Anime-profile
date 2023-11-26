@@ -2,7 +2,6 @@
 <!--初始化页面并设置禁用右键属性-->
 <html lang="zh" onselectstart="return false" oncontextmenu=self.event.returnValue=false>
 	<!--head模块-->
-
 	<head>
 		<!--字符编码-->
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -75,11 +74,7 @@
 		<!--PWA配置-->
 		<link rel='manifest' href='./manifest.json' />
 		<!--跨域内容预解析-->
-		<link rel="preconnect" href="https://cartoon.heheda.top/" crossorigin />
-		<link rel="preconnect" href="https://tva1.sinaimg.cn/" crossorigin />
 		<link rel="preconnect" href="https://q2.qlogo.cn/" crossorigin />
-		<link rel="dns-prefetch" href="https://cartoon.heheda.top/" />
-		<link rel="dns-prefetch" href="https://tva1.sinaimg.cn/" />
 		<link rel="dns-prefetch" href="https://q2.qlogo.cn/" />
 		<!--SEO优化-->
 		<!--标题-->
@@ -97,7 +92,6 @@
 		<link rel="shortcuticon" href="./favicon.ico" />
 	</head>
 	<!--body模块-->
-
 	<body class="is-loading" title="久违久违，欢迎您的到来！开始尽情探索吧！">
 		<!-- Wrapper -->
 		<div id="wrapper">
@@ -195,10 +189,13 @@
 			const el = document.createElement('pwa-update');
 			document.body.appendChild(el);
 		</script>
+		<!-- 谷歌广告 -->
+		<script async
+			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3670070169085381"
+			crossorigin="anonymous"></script>
 		<!--当动态内容被禁止时引入的css-->
 		<noscript>
 			<link rel="stylesheet" href="./heheda/css/noscript.css" type="text/css">
 		</noscript>
 	</body>
-
 </html>
