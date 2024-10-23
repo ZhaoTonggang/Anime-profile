@@ -66,7 +66,7 @@
 		<!-- 添加到主屏 -->
 		<meta name="mobile-web-app-capable" content="yes">
 		<!--引入核心css-->
-		<link rel="stylesheet" href="./heheda/css/main.css" type="text/css" />
+		<link rel="stylesheet" href="./heheda/css/index.css" type="text/css" />
 		<!-- 引入FontAwesome图标库 -->
 		<link rel="stylesheet" href="./heheda/lib/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" />
 		<!-- 音乐播放器 -->
@@ -78,7 +78,7 @@
 		<link rel="dns-prefetch" href="https://q2.qlogo.cn/" />
 		<!--SEO优化-->
 		<!--标题-->
-		<title>赵彤刚的小屋</title>
+		<title>赵彤刚的小屋 - 结知交赴山海</title>
 		<!--关键词-->
 		<meta name="keywords" content="赵彤刚,个人主页,引导页,导航,博客,音乐,电影,壁纸,解析,源码,教程">
 		<!--描述-->
@@ -105,7 +105,7 @@
 					<!--内容-->
 					<a href="https://weixin.sogou.com/weixin?type=1&s_from=input&query=%E4%B8%80%E5%8F%AA%E5%B0%8F%E5%BD%A4%E5%88%9A"
 						rel="noopener" target="_blank" title="欢迎关注我的微信公众号">
-						<h1>赵彤刚</h1>
+						<h1>赵彤刚的小屋</h1>
 					</a>
 					<!--一言-->
 					<p id="hitokoto" title="我是一个普通的男孩子！">:D
@@ -140,7 +140,7 @@
 						<li><a href="https://api.heheda.top/" class="fa fa-cogs" rel="noopener" target="_blank"
 								title="提供免费的API">api</a>API
 						</li>
-						<li><a href="./heheda/image/ztg-y.png" class="fa fa-camera" rel="noopener" target="_blank"
+						<li><a href="https://photo.heheda.top/" class="fa fa-camera" rel="noopener" target="_blank"
 								title="我的个人相册">photo</a>相册</li>
 					</ul>
 					<!--联系方式-->
@@ -176,15 +176,15 @@
 		<div id="player3"></div>
 		<!--落叶效果依赖-->
 		<script src="./heheda/js/petalfloat.js"></script>
-		<!--一言API-->
-		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 		<!--页面逻辑-->
 		<script src="./heheda/js/index.js"></script>
 		<!-- 音乐播放器 -->
-		<script src="https://other.heheda.top/zplayer/js/zplayer.js" defer></script>
-		<script src="https://other.heheda.top/zplayers.js" defer></script>
+		<script src="https://other.heheda.top/zplayer/js/zplayer.js"></script>
+		<script src="https://other.heheda.top/zplayers.js"></script>
+		<!--一言API-->
+		<script async src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto"></script>
 		<!--PWA渐进式应用配置-->
-		<script async="async" type="module">
+		<script async type="module">
 			import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 			const el = document.createElement('pwa-update');
 			document.body.appendChild(el);

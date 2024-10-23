@@ -9,7 +9,7 @@ if (!navigator.share) {
 if (navigator.userAgent.match(/(MSIE|rv:11\.0)/)) {
 	document.body.classList.add("is-ie");
 }
-window.onload = function() {
+window.onload = () => {
 	document.body.classList.remove("is-loading");
 }
 
