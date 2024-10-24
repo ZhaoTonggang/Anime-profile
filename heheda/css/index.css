@@ -371,16 +371,6 @@ ul.icons li a:hover {
 	}
 }
 
-@media screen and (max-width: 1100px) {
-	body {
-		background-size: cover, cover !important;
-	}
-
-	body::after {
-		background-size: cover, 30% !important;
-	}
-}
-
 @media screen and (max-width: 1680px) {
 
 	body {
